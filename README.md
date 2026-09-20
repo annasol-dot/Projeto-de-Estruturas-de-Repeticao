@@ -33,4 +33,29 @@ O laço `while` foi utilizado na coleta das temperaturas. O `while (1)` cria um 
 
 Execute o código em um **Compilador C**, como  `Online GDB`
 
+## Testes
+
+**Teste 1**: Validação de entradas inválidas
+
+ - Entrada: `abc`
+ - Saída: Entrada Inválida! Digite um valor numérico
+
+ - O programa capturou o erro de digitação, limpou o buffer e solicitou uma nova leitura válida sem quebrar o loop
+
+**Teste 2**: Temperaturas acima do limite, porém não consecutivas
+
+ - Limite de temperatura: `80`
+ - Entradas: `70`, `89`, `68`, `90`, `45`, `100`.
+
+ - O programa leu três temperaturas acima do limite, porém não são consecutivas, então o programa roda normalmente
+
+**Teste 3**: Três temperaturas consecutivas acima do limite
+
+ - Limite de temperatura: `80`
+ - Entradas: `45`, `87`, `90`, `120`
+
+ - O programa leu três temperatura consecutivas acima do limite o programa então se encerra automaticamente.
+
+
+
 
