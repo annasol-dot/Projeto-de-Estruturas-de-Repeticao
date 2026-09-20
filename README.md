@@ -15,7 +15,7 @@
 
 **Valores Inválidos**: Tanto na solicitação do limite de temperatura e nos valos da leitura, o programa verifica o retorno do `scanf`, caso o usuário digite uma letra ou um símbolo o `scanf` não retorna e exibe um mensagem de erro na tela. O programa utiliza do `while` ate o usuário inserir uma entrada válida.
 
-**Temperaturas acima do Limite**: Após uma leitura válida da temperatura, o programa utiliza uma condicional `if (temp > limete_temp)`. Se a temperatura for acima do limite, o programa soma a temperatura ao total de leituras acima do limite `(acima_limte++)` e inicia a contagem de temperaturas altas acima do limite.
+**Temperaturas acima do Limite**: Após uma leitura válida da temperatura, o programa utiliza uma condicional `if (temp > limite_temp)`. Se a temperatura for acima do limite, o programa soma a temperatura ao total de leituras acima do limite `(acima_limite++)` e inicia a contagem de temperaturas altas acima do limite.
 
 **Contagem de Temperaturas Consecutivas**: O programa utiliza a variável `consecutivas_acima`, caso o usuário digite uma temperatura maior que a do limite estabelecido no início do programa, é adicionado +1 na contagem e um alerta é exibido na tela ( 1/3, 2/3, 3/3). O contador zera caso uma temperatura menor for menor ou igual ao limite, reiniciando a sequencia.
 
