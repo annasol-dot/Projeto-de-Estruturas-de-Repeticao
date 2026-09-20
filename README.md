@@ -2,7 +2,7 @@
 
 - Aluna: Anna Clara Damasceno de Almeida
 - Disciplina: Algoritmo e Pensamento Computacional
-- Professora: Profa. Karla Sartin
+- Professora: **Profa. Karla Sartin**
 
 
 ## Monitoramento de Temperatura
