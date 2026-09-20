@@ -6,7 +6,7 @@
 - Professora: Profa. Karla Sartin
 
 
-## Monitoramento de Temperatura##
+## Monitoramento de Temperatura
 
 
 
@@ -21,3 +21,17 @@
 **Contagem de Temperaturas Consecutivas**: O programa utiliza a variável `consecutivas_acima`, caso o usuário digite uma temperatura maior que a do limite estabelecido no início do programa, é adicionado +1 na contagem e um alerta é exibido na tela ( 1/3, 2/3, 3/3). O contador zera caso uma temperatura menor for menor ou igual ao limite, reiniciando a sequencia.
 
 **Encerramento do Monitoramento**: O monitoramento pode se encerrar manualmente caso o usuário digite `000`, ou pode se encerrar automaticamente se a variável `consecutivas_acima` atingir o valor de 3 leituras acima do limite estabelecido, o programa ativa o desligamento e interrompe o laço com `break`.
+
+
+## Estrutura de Repetição
+
+O laço `do-while` foi escolhido para garantir que o programa peça o limite de temperatura assim que for iniciado, ele força o usuário a fornecer uma valor válido, caso não seja válido, o programa se repete.
+
+O laço `while` foi utilizado na coleta das temperaturas. O `while (1)` cria um laço infinito, pois o número 1 representa uma condição sempre verdadeira em C, o programa lê o valor digitado pelo usuário, e caso ele seja verdadeiro o programa continua solicitando por mais valores ate ser quebrado (manualmente ou automaticamente), caso a temperatura digitada seja não seja um valor numérico, o programa exibe uma mensagem e solicita novamente por um valor verdadeiro.
+
+
+## Como executar 
+
+Execute o código em um **Compilador C**, como  `Online GDB`
+
+
