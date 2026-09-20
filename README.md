@@ -1,5 +1,4 @@
-# Projeto-de-Estruturas-de-Repeticao
-
+# Projeto de Estruturas de Repetição
 
 - Aluna: Anna Clara Damasceno de Almeida
 - Disciplina: Algoritmo e Pensamento Computacional
