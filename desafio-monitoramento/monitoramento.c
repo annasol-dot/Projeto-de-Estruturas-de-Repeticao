@@ -12,6 +12,7 @@ int main() {
     
     printf("==== SISTEMA DE MONITORAMENTO INDUSTRIAL ====\n");
     
+    // Solicita e valida o limite de temperatura
    do {
         printf("Digite o limite de temperatura: ");
         if (scanf("%f", &limite_temp) != 1) {
@@ -23,7 +24,9 @@ int main() {
             printf("O limite de temperatura deve ser maior que 0°C. \n");
         }
    } while (limite_temp <=0);
-
+   
+   
+    // Recebe  e processa as temperaturas do sensor
     printf("Digite a temperatura ou 000 para encerrar manualmente: \n");
     
     while (1) {
@@ -34,10 +37,14 @@ int main() {
             while (getchar() != '\n');
             continue;
         }
+        
+        // Condição para parar o monitoramento
         if (temp == 000) {
             printf("\nMonitoramento encerrado.\n");
             break;
         }
+        
+        //Metricas da leituras
         
         if (total_leituras == 0) {
             maior_temp = temp;
@@ -54,14 +61,16 @@ int main() {
         soma_temp += temp;
         total_leituras++;
         
+        //Verificacção de Segurança
         if (temp > limite_temp) {
             acima_limite++;
             consecutivas_acima++;
             printf("⚠️ ALERTA: Temperatura acima do limite! (%d/3 leituras consecutivas)\n", consecutivas_acima);
         } else {
-            consecutivas_acima = 0;
+            consecutivas_acima = 0; //Reinicia a contagem
         }
         
+        //O programa encerra automaticamente com 3 temperaturas acima do limite consecutivas
         if(consecutivas_acima == 3) {
             printf("\n🚨 AERTA: 3 temperaturas consecutivas acima do limite detectadas!\n");
             printf("Desligamento automático do sistema ativado.\n");
